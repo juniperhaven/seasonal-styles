@@ -65,6 +65,7 @@
 			<nav>
 				<ul>
 					<!-- <li class="seasons"><a href="Default">Default</a></li> -->
+					<li class="seasons"><a href="Default">Default</a></li>
 					<li class="seasons"><a href="Spring">Spring</a></li>
 					<li class="seasons"><a href="Summer">Summer</a></li>
 					<li class="seasons"><a href="Fall">Fall</a></li>
@@ -73,7 +74,7 @@
 			</nav>
 		</header>
 		<main role="main">
-			<header><h3>Outfitter for All Seasons!</h3></header>
+			<header><h3>Outfitter For All Seasons!</h3></header>
 			<!-- <p>
 			The colors of the seasonal images are as follows:
 			<ul>
@@ -143,7 +144,9 @@
 
 					default:
 						$("#logo").attr("src", "images/four-seasons.gif");
-						alert("Something has gone wrong. Please contact my maker.");
+						$("#wear").attr("src", "images/300x400.png");
+						$("html").css("background-color", "#ccc");
+						$("main header h3").html("Outfitter For All Seasons!");
 						break;
 				}
 			});
